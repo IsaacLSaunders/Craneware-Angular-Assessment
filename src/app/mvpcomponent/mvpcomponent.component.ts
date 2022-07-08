@@ -8,6 +8,8 @@ import { Entries } from '../entriesInterface';
   styleUrls: ['./mvpcomponent.component.css']
 })
 export class MVPComponentComponent implements OnInit {
+  
+  constructor(private dataService: AuthorAndTitleService) { }
 
   entries: Entries[] = [];
 
@@ -15,8 +17,6 @@ export class MVPComponentComponent implements OnInit {
     this.dataService.getEntries()
       .subscribe(entries => this.entries = entries)
   }
-
-  constructor(private dataService: AuthorAndTitleService) { }
 
   ngOnInit(): void {
     this.getEntries()
