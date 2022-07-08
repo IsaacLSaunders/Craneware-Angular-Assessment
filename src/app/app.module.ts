@@ -7,10 +7,12 @@ import { InAppDataService } from './in-app-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MVPComponentComponent } from './mvpcomponent/mvpcomponent.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MVPComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,11 @@ import { InMemoryDbService } from 'angular-in-memory-web-api'
 export class InAppDataService implements InMemoryDbService {
   createDb(){
     const authorEntries = [
-      {author: 'Ernest Hemingway', books: ['The Old Man and the Sea',]}
+      {author: 'Ernest Hemingway', title: 'The Old Man and the Sea'},
+      {author: 'Edgar Alan Poe', title: 'The Raven'},
+      {author: 'Garth Nix', title: 'Clariel'}
     ]
+    
     return {authorEntries}
   }
 
